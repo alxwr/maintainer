@@ -23,9 +23,9 @@ import (
 
     "fmt"
 
-    "github.com/gaocegege/maintainer/config"
-    "github.com/gaocegege/maintainer/repo"
-    "github.com/gaocegege/maintainer/util"
+    "github.com/myii/maintainer/config"
+    "github.com/myii/maintainer/repo"
+    "github.com/myii/maintainer/util"
     "github.com/google/go-github/github"
     "github.com/spf13/cobra"
     "github.com/spf13/viper"
