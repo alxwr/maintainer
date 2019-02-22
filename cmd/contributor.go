@@ -126,7 +126,7 @@ func authorHeader() string {
 
 // authorTableHeader returns the table header to be written into AUTHORS.md.
 func authorTableHeader() string {
-    return "Avatar|Contributor|Contributions\n-----|-----|-----\n"
+    return "Avatar|Contributor|Contributions\n:-:|---|:-:\n"
 }
 
 func composeByOrder(contributors []*github.Contributor) error {
