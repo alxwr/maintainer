@@ -148,7 +148,13 @@ func writeToFile(contributors []*github.Contributor) error {
     for _, contributor := range contributors {
         if *contributor.Login != "semantic-release-bot" {
             if _, err := f.WriteString(fmt.Sprintf(
-                "<img class='float-left rounded-1' src='%s' width='36' height='36' alt='@%s'>|[@%s](%s)|%d", *contributor.AvatarURL, *contributor.Login, *contributor.Login, *contributor.HTMLURL, *contributor.Contributions)); err != nil {
+                "<img class='float-left rounded-1' src='%s' width='36' height='36' alt='@%s'>|[@%s](%s)|%d",
+                *contributor.AvatarURL,
+                *contributor.Login,
+                *contributor.Login,
+                *contributor.HTMLURL,
+                *contributor.Contributions,
+            )); err != nil {
                 return err
             }
             if _, err := f.WriteString("\n"); err != nil {
